@@ -9,22 +9,6 @@ body {
     padding: 0;
 }
 
-:root {
-    --primary-color: #0467b6;
-    --secondary-color: #4522f2;
-    --background-color-1: #f2f9fe;
-    --background-color-2: #f9f8f8;
-
-    --text-color: #626161;
-    --footer-color: #033f62;
-}
-
-
-
-
-
-
-/* Typography */
 h1,
 h2,
 h3,
@@ -32,6 +16,18 @@ h4,
 h5,
 h6 {
     font-family: "Noto Sans SC", "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #0467b6;
+    --secondary-color: #4522f2;
+    --textBackground-color: rgba(254, 7, 7, 0.1);
+    --icon-color:red;
+    --background-color-1: #f2f9fe;
+    --background-color-2: #f9f8f8;
+
+    --text-color: #626161;
+    --footer-color: #033f62;
 }
 
 /* Subtitle styles */
@@ -45,32 +41,37 @@ h6 {
     color: var(--secondary-color);
 }
 
-
+/*=================================================================
+index page styles
+=================================================================*/
 
 /* navbar*/
 
 .navbar-custom .nav-link {
-    color: #3B2F2F;
+    color:rgb(37, 35, 35);
 }
 
 .navbar-custom .nav-link.active {
-    font-weight: bold;
-    color: aliceblue;
+    font-weight: bold;  
+  
 }
 
-.navbar-custom .nav-link,
-.navbar-toggler,
-.navbar-custom a {
-    color: aliceblue;
-}
+
 
 /* Make the navbar sticky */
 .navbar {
-    background-color: var(--primary-color);
+    background-color: /*var(--primary-color);*/#fcfcfc;
     position: sticky;
     top: 0;
     z-index: 1000;
 
+}
+
+.nav img {
+    height:100%;
+} 
+.nav-link .avtive {
+    text-decoration: underline;
 }
 
 /**Translate **/
@@ -143,15 +144,29 @@ body {
 
 
 
-/***main content***/
+/*----------------------------
+**main content**
+------------------------------------*/
+
+/*````````````````````````````main general styles```````````````````````*/
 main section {
     padding-top: 50px;
 }
 
-/*classes section*/
+#classes .card-subtitle,
+#teachers .card-subtitle {
+    color: red;
+   
+}
+
+/*..............Chinses infomation section.............*/
+#chinese-info i {
+    color:rgb(191, 109, 2)
+}
+/*.............classes section............*/
 #classes {
     margin-top: 2px;
-    background-color: var(--background-color-1);
+    /*background-color: var(--background-color-1);*/
     padding-bottom: 6rem;
 }
 
@@ -164,9 +179,20 @@ main section {
     margin-right: auto;
 }
 
+#classes .backgroundIcon i {
+   margin-top: 20px;
+    margin-left: 15px;
+    width:45px;
+    height: 45px;
+    border-radius: 20%;
+    background-color:var(--textBackground-color)
+    
+   
+}
+
 #classes i {
 
-    color: var(--secondary-color);
+    color: var(--icon-color);
     font-size: 1.5rem;
     padding: 0.5rem;
     margin-top: 10px;
@@ -179,6 +205,32 @@ main section {
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+/***....................achievements section.........................*/
+#achievement img {
+    height: 400px;      /* change height */
+    object-fit: cover;  /* keeps image nicely cropped */
+}
+
+
+/***....................teachers section.........................*/
+#teachers h2 {
+   
+   
+    width: 100px;;
+    height:100px;
+    border-radius: 50%;
+    background-color:  rgba(253, 3, 3, 0.1);
+    color: rgb(253, 4, 4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-bottom: 1rem;
+   
+}
+
 
 /*enrollment section*/
 #enrollment {
@@ -269,7 +321,7 @@ footer * {
 
 /*++++++about page++++++++*/
 .about-img {
-    max-width: 600px;
+  
     width: 100%;
 }
 
