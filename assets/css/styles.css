@@ -9,342 +9,373 @@ body {
     padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Noto Sans SC", "Roboto", sans-serif;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Noto Sans SC", "Roboto", sans-serif;
+    }
 
-:root {
-    --primary-color: #0467b6;
-    --secondary-color: #4522f2;
-    --textBackground-color: rgba(254, 7, 7, 0.1);
-    --icon-color:red;
-    --background-color-1: #f2f9fe;
-    --background-color-2: #f9f8f8;
+    :root {
+        --primary-color: #0467b6;
+        --secondary-color: #4522f2;
+        --textbackground-color: rgba(253, 3, 3, 0.1);
+        --background-color-1: rgb(248, 241, 241,0.5);
+        --background-color-2: #f9f8f8;
+        --text-color: #626161;
+        --footer-color: #033f62;
+    }
 
-    --text-color: #626161;
-    --footer-color: #033f62;
-}
+    /* Subtitle styles */
+    .subtitle-1 {
+        font-size: 1.25rem;
+        color: var(--text-color);
 
-/* Subtitle styles */
-.subtitle-1 {
-    font-size: 1.25rem;
-    color: var(--text-color);
-}
+    }
 
-.subtitle-2 {
-    font-size: 1.25rem;
-    color: var(--secondary-color);
-}
+    .subtitle-2 {
+        font-size: 1.25rem;
+        color: var(--secondary-color);
+    }
 
-/*=================================================================
+    /*=================================================================
 index page styles
 =================================================================*/
 
-/* navbar*/
+    /* navbar*/
 
-.navbar-custom .nav-link {
-    color:rgb(37, 35, 35);
-}
-
-.navbar-custom .nav-link.active {
-    font-weight: bold;  
-  
-}
-
-
-
-/* Make the navbar sticky */
-.navbar {
-    background-color: /*var(--primary-color);*/#fcfcfc;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-}
-
-.nav img {
-    height:100%;
-} 
-.nav-link .avtive {
-    text-decoration: underline;
-}
-
-/**Translate **/
-/* Hide Google Translate top bar */
-.goog-te-banner-frame.skiptranslate {
-    display: none !important;
-}
-
-body {
-    top: 0 !important;
-}
-
-/* Hide Google branding */
-.goog-logo-link {
-    display: none !important;
-}
-
-.goog-te-gadget {
-    color: transparent !important;
-    font-size: 0;
-}
-
-
-/* Hero Section */
-#hero {
-    height: 85vh;
-    width: 100%;
-    position: relative;
-    color: white;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.hero-slide {
-    height: 85vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-slide::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hero-content {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 6rem;
-}
-
-#hero p {
-    font-size: 1.25rem;
-    max-width: 600px;
-    margin: 0 auto 2rem auto;
-}
-
-#hero .btn-primary {
-    background-color: var(--primary-color);
-    border: none;
-    padding: 0.2rem 0.8rem;
-    font-size: 1.2rem;
-}
-
-
-
-/*----------------------------
-**main content**
-------------------------------------*/
-
-/*````````````````````````````main general styles```````````````````````*/
-main section {
-    padding-top: 50px;
-}
-
-#classes .card-subtitle,
-#teachers .card-subtitle {
-    color: red;
    
-}
 
-/*..............Chinses infomation section.............*/
-#chinese-info i {
-    color:rgb(191, 109, 2)
-}
-/*.............classes section............*/
-#classes {
-    margin-top: 2px;
-    /*background-color: var(--background-color-1);*/
-    padding-bottom: 6rem;
-}
+    .navbar-custom .nav-link.active {
+        font-weight: bold;
 
-#classes .row {
-    justify-content: center;
-}
-
-#classes .card {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#classes .backgroundIcon i {
-   margin-top: 20px;
-    margin-left: 15px;
-    width:45px;
-    height: 45px;
-    border-radius: 20%;
-    background-color:var(--textBackground-color)
-    
-   
-}
-
-#classes i {
-
-    color: var(--icon-color);
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-
-#classes .btn {
-    width: 100%;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-/***....................achievements section.........................*/
-#achievement img {
-    height: 400px;      /* change height */
-    object-fit: cover;  /* keeps image nicely cropped */
-}
-
-
-/***....................teachers section.........................*/
-#teachers h2 {
-   
-   
-    width: 100px;;
-    height:100px;
-    border-radius: 50%;
-    background-color:  rgba(253, 3, 3, 0.1);
-    color: rgb(253, 4, 4);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: auto;
-    margin-bottom: 1rem;
-   
-}
-
-
-/*enrollment section*/
-#enrollment {
-    background-color: var(--background-color-2);
-}
-
-#enrollment i {
-
-    color: red;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 8px;
-}
-
-#enrollment .card-text {
-    padding-left: 80px;
-
-}
-
-#registration label,
-#registration button {
-    font-weight: bold;
-}
-
-/*Testimonial Section*/
-#testimonials {
-    background-color: var(--background-color-1);
-}
-
-.testimonial-image {
-    width: 100px;
-    height: 100px;
-}
-
-/*contacts section*/
-
-
-#contacts i {
-
-    font-size: 1rem;
-    margin-top: 5px;
-}
-
-/*google map section*/
-.map-container iframe {
-    width: 100%;
-    max-width: 90vw;
-    position: 50% 50%;
-    height: 280px;
-    margin: auto;
-    padding-bottom: 20px;
-}
-
-
-/*footer section*/
-
-/*copyright section*/
-
-footer * {
-    background-color: black;
-    color: white;
-    padding: 5px;
-}
-
-
-
-/*+++++++++++++++classes page ++++++++++++++++++++*/
-
-.card img {
-    height: 100%;
-    object-fit: cover;
-}
-
-#our-classes .card {
-    --bs-card-border-color: :none;
-}
-
-#our-classes .card {
-    padding-top: 75px;
-}
-
-#year1 {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/*++++++about page++++++++*/
-.about-img {
-  
-    width: 100%;
-}
-
-
-
-
-/*************************************************/
-/*************Media query:tablets and larger(576px and up)*/
-@media screen and (min-width:576px) {
-
-
-    /*+++++++++++++++mobile screen ++++++++++++++++++++*/
-    .about-img {
-        max-width: 280px;
     }
 
-    #about-us p {
+
+
+    /* Make the navbar sticky */
+    .navbar {
+        background-color: var(--primary-color);
+           
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+    }
+
+    .nav img {
+        height: 100%;
+    }
+
+    .nav-link .avtive {
+        text-decoration: underline;
+    }
+
+    /**Translate **/
+    /* Hide Google Translate top bar */
+    .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+    }
+
+    body {
+        top: 0 !important;
+    }
+
+    /* Hide Google branding */
+    .goog-logo-link {
+        display: none !important;
+    }
+
+    .goog-te-gadget {
+        color: transparent !important;
+        font-size: 0;
+    }
+
+
+    /* Hero Section */
+    #hero {
+        height: 85vh;
+        width: 100%;
+        position: relative;
+        color: white;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .hero-slide {
+        height: 85vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-slide::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+
+    #hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin: 0 auto 2rem auto;
+    }
+
+    #hero .btn-primary {
+        background-color: var(--primary-color);
+        border: none;
+        padding: 0.2rem 0.8rem;
         font-size: 1.2rem;
     }
 
-    #about-us h1 {
-        font-size: 2.5rem;
+
+
+    /*----------------------------
+**main content**
+------------------------------------*/
+
+    /*............................main general styles..........................*/
+    main section {
+        padding-top: 50px;
     }
 
 
-}
+
+
+    /*..............Chinses infomation section.............*/
+
+    #chinese-info {
+        background-color: rgb(253, 249, 237);
+        padding: 2rem 0;
+        display: none;
+    }
+
+    #chinese-info i {
+        color: #a57b00;
+
+    }
+
+
+
+    /*.............classes section............*/
+    #classes {
+        margin-top: 2px;
+        padding-bottom: 6rem;
+        background-color: var(--background-color-1);
+    }
+
+    #classes .row {
+        justify-content: center;
+    }
+
+    #classes .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #classes .backgroundIcon i {
+        margin-top: 20px;
+        margin-left: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 20%;
+        background-color: rgba(253, 3, 3, 0.1);
+
+
+    }
+
+    #classes i {
+
+        color: red;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+
+    #classes .btn {
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+
+    }
+
+    /***....................achievements section.........................*/
+    #achievement {
+        background-color: var(--background-color-1);
+
+    }
+
+    #achievement img {
+        height: 400px;
+        /* change height */
+        object-fit: cover;
+        /* keeps image nicely cropped */
+    }
+
+
+    /***....................teachers section.........................*/
+    #teachers {
+        background-color: var(--background-color-1);
+    }
+    #teachers h2 {
+
+
+        width: 100px;
+        ;
+        height: 100px;
+        border-radius: 50%;
+        background-color: rgba(253, 3, 3, 0.1);
+        color: rgb(253, 4, 4);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: auto;
+        margin-bottom: 1rem;
+
+    }
+
+    #teachers .card-subtitle {
+        color: red;
+
+    }
+
+  
+
+    
+    /*...........................contact section............................................*/
+
+    #contacts i {
+
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    /*...........................google map section............................................*/
+    .map-container iframe {
+        width: 100%;
+        max-width: 90vw;
+        position: 50% 50%;
+        height: 280px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+
+
+    /*==============================================
+    footer section
+    =======================================================*/
+
+    /*copyright section*/
+
+    footer * {
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+
+
+
+    /*+++++++++++++++classes page ++++++++++++++++++++*/
+
+    .card img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #our-classes .card {
+        --bs-card-border-color: :none;
+    }
+
+    #our-classes .card {
+        padding-top: 75px;
+    }
+
+    #year1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /*++++++about page++++++++*/
+    .about-img {
+
+        width: 100%;
+    }
+  /*.++++++++++++++++++++++++++++++++++++++++++++++++++++enrollment page+++++++++++++++++++++++++++++++++++*/
+    #enrollment {
+        background-color: rgb(248, 241, 241,0.5);
+    }
+
+    #enrollment i {
+
+        color: red;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 8px;
+    }
+
+    #enrollment .card-text {
+        padding-left: 80px;
+
+    }
+
+    #registration label,
+    #registration button {
+        font-weight: bold;
+    }
+
+
+
+
+
+    /*************************************************/
+    /*************Media query:tablets and larger(576px and up)*/
+    @media screen and (min-width:576px) {
+
+
+        /*+++++++++++++++mobile screen ++++++++++++++++++++*/
+        .about-img {
+            max-width: 280px;
+        }
+
+        #about-us p {
+            font-size: 1.2rem;
+        }
+
+        #about-us h1 {
+            font-size: 2.5rem;
+        }
+
+
+    }
+
+
+    /*************************************************************************/
+    /******************************Media query:tablets and larger(992px and up)*/
+    @media screen and (min-width:992px) {
+
+        #chinese-info {
+            display: block;
+        }
+    }
