@@ -1,6 +1,7 @@
 /* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Body and Layout */
-
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     display: flex;
     flex-direction: column;
@@ -205,7 +206,11 @@ index page styles
         margin-top: 10px;
         margin-left: 10px;
     }
+#classes .card-subtitle {
+        color: red;
 
+    }
+    
 
     #classes .btn {
         width: 100%;
@@ -214,19 +219,6 @@ index page styles
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
 
-    }
-
-    /***....................achievements section.........................*/
-    #achievement {
-        background-color: var(--background-color-1);
-
-    }
-
-    #achievement img {
-        height: 400px;
-        /* change height */
-        object-fit: cover;
-        /* keeps image nicely cropped */
     }
 
 
@@ -258,7 +250,19 @@ index page styles
 
     }
 
-  
+  /***....................achievements section.........................*/
+    #achievement {
+        background-color: var(--background-color-1);
+
+    }
+
+    #achievement img {
+        height: 400px;
+        /* change height */
+        object-fit: cover;
+        /* keeps image nicely cropped */
+    }
+
 
     
     /*...........................contact section............................................*/
